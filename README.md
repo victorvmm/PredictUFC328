@@ -14,4 +14,4 @@ Para prever um lutador, adicionar parâmetro de venceu/perdeu uma luta, possivel
 
 Testar tanto com rede neural quanto com regressão logística (ou talvez outros modelos de classificação)
 
-Problema atual: resolver índice na passagem das lutas para StricklandDS (índice fora do limite)
+Como usar o dataset para o modelo? Unir as 2 tabelas? 
