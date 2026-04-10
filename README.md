@@ -11,3 +11,5 @@ Cinturão, venceu, KO/TKO/Submissão, Tempo de luta, golpes significativos acert
 
 
 Para prever um lutador, adicionar parâmetro de venceu/perdeu uma luta, possivelmente ajustar esse parâmetro no modelo
+
+Testar tanto com rede neural quanto com regressão logística (ou talvez outros modelos de classificação)
