@@ -14,4 +14,4 @@ Para prever um lutador, adicionar parâmetro de venceu/perdeu uma luta, possivel
 
 Testar tanto com rede neural quanto com regressão logística (ou talvez outros modelos de classificação)
 
-Como usar o dataset para o modelo? Unir as 2 tabelas? 
+Fazer 2 modelos, colocar como teste cada um e fazer uma média das probabilidades (?)
