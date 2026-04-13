@@ -9,9 +9,6 @@ Nome, idade, altura, alcance, vitórias, derrotas, golpes significantes por minu
 CSV de adversários anteriores com dados das lutas para cada um:
 Cinturão, venceu, KO/TKO/Submissão, Tempo de luta, golpes significativos acertados, golpes significativos recebidos, % de golpes significativos acertados, quedas, % de quedas, tempo de controle, quedas recebidas, % de quedas recebidas, tempo de controle do adversário
 
-
-Para prever um lutador, adicionar parâmetro de venceu/perdeu uma luta, possivelmente ajustar esse parâmetro no modelo
-
-Testar tanto com rede neural quanto com regressão logística (ou talvez outros modelos de classificação)
-
-Fazer 2 modelos, colocar como teste cada um e fazer uma média das probabilidades (?)
+# Questões: 
+Adicionar o próprio lutador no data/target ou não? No que isso afetaria?
+Pegar os resultados dos dois dataset e fazer uma média entre eles? Ver quais as diferenças?
