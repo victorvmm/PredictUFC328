@@ -1,13 +1,43 @@
 # PredictUFC328
-Predictions of Khamzat Chimaev vs Sean Strickland
+Predictions of Khamzat Chimaev vs Sean Strickland for UFC 328
 
-# Arquivos:
+# Files:
 
-Atributos do CSV dos lutadores - Fighters:
-Nome, idade, altura, alcance, vitórias, derrotas, golpes significantes por minuto, acurácia de golpes significantes, golpes significantes absorvidos por minuto, defesa de golpes significativos, média de derrubadas a cada 15 min, acertos de derrubadas, defesa de derrubadas, média de tentativas de submissão a cada 15 min
+Fighters CSV attributes:
+- Name 
+- Age 
+- Height (cm)
+- Reach (cm)
+- Wins
+- Losses
+- Significant strikes landed per minute
+- Significant striking accuracy 
+- Significant strike defense
+- Significant strikes absorbed per minute
+- Average takedown landed per 15 minutes
+- Takedown accuracy
+- Takedown defense
+- Average submissions attempted per 15 minutes
 
-Atributos do CSV do histórico de lutas (de ambos lutadores) - ChimaevFights e StricklandFights:
-Adversário, luta de cinturão, venceu, KO/TKO/Submissão, tempo de luta, golpes significativos acertados, golpes significativos recebidos, % de golpes significativos acertados, quedas efetivas, % de quedas efetivas, tempo de controle, quedas recebidas, % de quedas recebidas, tempo de controle do adversário
+Fighters record CSVs - ChimaevFights (for Khamzat Chimaev) and StricklandFights (for Sean Strickland):
+- Fight (Opponent) 
+- Belt (1 = Title fight, 0 = regular fight)
+- Won (1 = won, 0 = lost)
+- KO/TKO/Submission (1 = Yes, 0 = Decision)
+- Fight time (min)
+- Significant strikes landed 
+- Opponent's significant strikes 
+- Significant strikes landed % 
+- Takedowns
+- Takedown accuracy
+- Control time (min)
+- Opponent's takedowns
+- Opponent's takedowns accuracy 
+- Opponent's control time (min)
+
+DataCleaning Jupyter Notebook:
+
+Models Jupyter Notebook:
 
 # A Fazer: 
 
@@ -26,7 +56,7 @@ Chimaev como dataset principal, deu errado (pegar porcentagens para exibir erro)
 
 # "Bibliografia"
 
-Fonte de dados:
+Data source:
 http://www.ufcstats.com/statistics/events/completed
 
 Os dados foram obtidos de fontes públicas disponíveis para uso não comercial, apenas educacional.
