@@ -1,5 +1,6 @@
 # PredictUFC328
-Predictions of Khamzat Chimaev vs Sean Strickland for UFC 328
+
+This project uses Logistic Regression to predict the outcome of the fight between Khamzat Chimaev and Sean Strickland, set to happen in UFC 328, based on historical fight data.
 
 # Files:
 
@@ -36,27 +37,44 @@ Fighters record CSVs - ChimaevFights (for Khamzat Chimaev) and StricklandFights 
 - Opponent's control time (min)
 
 DataCleaning Jupyter Notebook:
+File for data cleaning and preparation, organizing data and adjusting it so the model can predict adequately.
 
 Models Jupyter Notebook:
+File for the model creation, training and prediction, returns the predicted result of the fight.
 
-# A Fazer: 
+# Model description
 
-Organizar o projeto, documentar tentativas e erros etc.
+- Model: Logistic Regression
+- Penalty: L1
+- Solver: Liblinear
+- Tolerance: 1e-3
+Hyperparameters were initially set and later evaluated using cross-validation.
 
+The model was limitated in 3 fields:
+- Extremely small dataset (especially for Chimaev)
+- Results are highly sensitive to small variations in data
+- Class imbalance (Chimaev unbeaten)
+- Predicted probabilities should not be interpreted as real-world likelihoods
 
-Adicionar o próprio lutador no data/target ou não? No que isso afetaria?
-Pegar os resultados dos dois dataset e fazer uma média entre eles? Ver quais as diferenças?
+For prediction, there were 4 options of datasets
 
-Alternativa 1:
+Option 1 - Strickland dataset, with himself as sample:
+Model predicts Khamzat Chimaev as winner, with 62.78% estimation probability.
 
-Alternativa 2:
+Option 2 - Strickland dataset, without himself as sample:
+Model predicts Khamzat Chimaev as winner, with 52.73% estimation probability.
 
-Alternativa 3:
-Chimaev como dataset principal, deu errado (pegar porcentagens para exibir erro) por só ter vitórias
+Option 3 - Chimaev dataset, with himself as sample:
+Model predicts Sean Strickland as winner, with 89.68% estimation probability. This divergence from the other cases
+happens because Chimaev dataset has much less samples than Strickland's.
 
-# "Bibliografia"
+Option 4 - Chimaev dataset, without himself as sample:
+Model is not able to predict because Chimaev dataset does not presents two classes, due to the fact that Chimaev
+did not lose a fight in MMA until this moment. Therefore, the column "Won" only presents value '1'.
+
+# Sources
 
 Data source:
 http://www.ufcstats.com/statistics/events/completed
 
-Os dados foram obtidos de fontes públicas disponíveis para uso não comercial, apenas educacional.
+The data were obtained from public sources available for non-commercial, only educational uses.
