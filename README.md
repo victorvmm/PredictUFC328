@@ -1,6 +1,6 @@
 # PredictUFC328
 
-This project uses Logistic Regression to predict the outcome of the fight between Khamzat Chimaev and Sean Strickland, set to happen in UFC 328, based on historical fight data.
+This project uses Logistic Regression to predict the outcome of the fight between Khamzat Chimaev and Sean Strickland, set to take place in UFC 328, based on historical fight data.
 
 # Files:
 
