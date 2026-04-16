@@ -37,9 +37,11 @@ Fighters record CSVs - ChimaevFights (for Khamzat Chimaev) and StricklandFights 
 - Opponent's control time (min)
 
 DataCleaning Jupyter Notebook:
+
 File for data cleaning and preparation, organizing data and adjusting it so the model can predict adequately.
 
 Models Jupyter Notebook:
+
 File for the model creation, training and prediction, returns the predicted result of the fight.
 
 # Model description
@@ -48,6 +50,7 @@ File for the model creation, training and prediction, returns the predicted resu
 - Penalty: L1
 - Solver: Liblinear
 - Tolerance: 1e-3
+
 Hyperparameters were initially set and later evaluated using cross-validation.
 
 The model was limitated in 3 fields:
