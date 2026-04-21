@@ -55,9 +55,8 @@ Hyperparameters were initially set and later evaluated using cross-validation.
 
 The model was limitated in 3 fields:
 - Extremely small dataset (especially for Chimaev)
-- Results are highly sensitive to small variations in data
+- Results are highly sensitive to small variations in data, due to the size of the dataset
 - Class imbalance (Chimaev unbeaten)
-- Predicted probabilities should not be interpreted as real-world likelihoods
 
 For prediction, there were 4 options of datasets
 
@@ -73,7 +72,7 @@ happens because Chimaev dataset has much less samples than Strickland's.
 
 Option 4 - Chimaev dataset, without himself as sample:
 Model is not able to predict because Chimaev dataset does not presents two classes, due to the fact that Chimaev
-did not lose a fight in MMA until this moment. Therefore, the column "Won" only presents value '1'.
+has not lost a fight in MMA until this moment. Therefore, the column "Won" only presents value '1'.
 
 # Sources
 
@@ -81,3 +80,5 @@ Data source:
 http://www.ufcstats.com/statistics/events/completed
 
 The data were obtained from public sources available for non-commercial, only educational uses.
+Predicted probabilities should not be interpreted as real-world likelihoods.
+
