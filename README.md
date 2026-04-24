@@ -62,16 +62,20 @@ For prediction, there were 4 options of datasets
 
 Option 1 - Strickland dataset, with himself as sample:
 
+
 Model predicts Khamzat Chimaev as winner, with 62.78% estimation probability.
 
 Option 2 - Strickland dataset, without himself as sample:
 
+
 Model predicts Khamzat Chimaev as winner, with 52.73% estimation probability.
+
 
 Option 3 - Chimaev dataset, with himself as sample:
 
 Model predicts Sean Strickland as winner, with 89.68% estimation probability. This divergence from the other cases
 happens because Chimaev dataset has much less samples than Strickland's.
+
 
 Option 4 - Chimaev dataset, without himself as sample:
 
