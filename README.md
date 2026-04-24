@@ -61,18 +61,22 @@ The model was limitated in 3 fields:
 For prediction, there were 4 options of datasets
 
 Option 1 - Strickland dataset, with himself as sample:
+
 Model predicts Khamzat Chimaev as winner, with 62.78% estimation probability.
 
 Option 2 - Strickland dataset, without himself as sample:
+
 Model predicts Khamzat Chimaev as winner, with 52.73% estimation probability.
 
 Option 3 - Chimaev dataset, with himself as sample:
+
 Model predicts Sean Strickland as winner, with 89.68% estimation probability. This divergence from the other cases
 happens because Chimaev dataset has much less samples than Strickland's.
 
 Option 4 - Chimaev dataset, without himself as sample:
+
 Model is not able to predict because Chimaev dataset does not presents two classes, due to the fact that Chimaev
-has not lost a fight in MMA until this moment. Therefore, the column "Won" only presents value '1'.
+has not lost a fight in MMA until this moment, therefore, the column "Won" only presents value '1'.
 
 # Sources
 
@@ -80,5 +84,6 @@ Data source:
 http://www.ufcstats.com/statistics/events/completed
 
 The data were obtained from public sources available for non-commercial, only educational uses.
+
 Predicted probabilities should not be interpreted as real-world likelihoods.
 
