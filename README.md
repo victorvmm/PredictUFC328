@@ -75,6 +75,7 @@ Model is not able to predict because Chimaev dataset does not presents two class
 has not lost a fight in MMA until this moment, therefore, the column "Won" only presents value '1'.
 
 # Sources
+This is an independent project created for educational and research purposes only. It is not affiliated with, endorsed by, or connected to the Ultimate Fighting Championship or any other organization.
 
 Data source:
 http://www.ufcstats.com/statistics/events/completed
